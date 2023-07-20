@@ -1,6 +1,12 @@
+Reglas de los componentes:
+
 // 1. Siempre son funciones 
 // 2. Siempre arrancan con mayúscula
 // 3. Siempre tienen retorno (function-return)
 // 4. Se usan paréntesis cuando el contenido tiene varias etiquetas (header (h1))
 // 5. El retorno puede ser un string, número, un array, un objeto, pero solemos manejar JSX
 // 6. El retorno de un componente tiene que ser solamente un elemento. Para meter varios elementos podemos hacer una etiqueta invisible <> </>
+// 7. Todos tienen la capacidad de recibir props
+// 8. Todos los componentes tienen la capacidad de tener un estado. Un estado son variables que se pueden usar en cualquier parte del componente. Son reactivas, si cambia de valor, entonces el componente va a reaccionar a su cambio.
+
+UseState es ua función para crear un estado. import {useState} 

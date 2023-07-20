@@ -24,15 +24,15 @@ const Contador = () => {
     };
   
     return (
-      <div>
+      <div className="flex flex-col items-center">
         <h2>Carrito de compras: {count}</h2>
-        <button onClick={incrementar} disabled={count === 10}>
+        <button className= "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"  onClick={incrementar} disabled={count === 10}>
           Agregar
         </button>
-        <button onClick={decrementar} disabled={count === 0}>
+        <button className= "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4" onClick={decrementar} disabled={count === 0}>
           Eliminar
         </button>
-        <button onClick={comprar} disabled={count === 0}>
+        <button className= "bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4" onClick={comprar} disabled={count === 0}>
           Comprar
         </button>
       </div>

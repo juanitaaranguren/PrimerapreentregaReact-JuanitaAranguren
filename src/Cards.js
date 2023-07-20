@@ -1,11 +1,15 @@
-function Cards (parametros) {
+import Contador from "./Contador"
+
+function Cards (props) {
     return (
 
     <main>
         <article>
-        <h3>{parametros.title}</h3>
-        <img src={parametros.image} alt="" />
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptatum, est aliquam, recusandae ipsa architecto illo omnis reprehenderit aperiam ex repellat modi incidunt explicabo a possimus quos quisquam aspernatur quod.</p>
+        <h3 className="text-[25px] font-bold">{props.title}</h3>
+        <img src={props.image} alt="" />
+        <p>Lorem ipsum dolor.</p>
+        <button>Ver detalle</button>
+        <Contador/>
         </article>
     </main>
     )
