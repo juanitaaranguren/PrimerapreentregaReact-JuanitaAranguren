@@ -9,4 +9,37 @@ Reglas de los componentes:
 // 7. Todos tienen la capacidad de recibir props
 // 8. Todos los componentes tienen la capacidad de tener un estado. Un estado son variables que se pueden usar en cualquier parte del componente. Son reactivas, si cambia de valor, entonces el componente va a reaccionar a su cambio.
 
-UseState es ua función para crear un estado. import {useState} 
+
+
+
+-UseState es una función para crear un estado. import {useState} 
+-Los hooks sirven para conseguir estados.
+
+Estados, acciones, listas.
+
+Estado
+const [counter, setCounter] = useState (0)
+
+Acción
+function sumar (){}
+function restar (){}
+function limpiar (){}
+
+Lista
+return (
+    <div>
+        <h3>counter</h3>
+        <p>counter</p>
+        <button>sumar</button>
+        <button>restar</button>
+        <button>limpiar</button>
+    </div>
+)
+
+hooks
+- useState
+- useContext
+- useReducer
+- useRef
+
+Son funcionalidades nuevas que se le agregan a un componente. No pueden ir fuera de un componente ni con condicional.

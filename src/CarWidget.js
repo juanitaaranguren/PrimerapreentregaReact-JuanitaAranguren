@@ -1,9 +1,11 @@
-import carritoimagen from './carrito.png'
+import carritoimagen from './img/carrito.png'
+import Contador from './ItemCount'
+
 
 function CarWidget (){
     return (
     <>
-    <p className="text-right">10</p>
+    <h2>10</h2>
     <img className= "carrito"src={carritoimagen} alt="" srcset="" />
     </>
     )
