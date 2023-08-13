@@ -1,6 +1,7 @@
 
 
-const productos = useState ([
+const productos = //useState 
+([
     {
         title: 'Meteor 350',
         image: ('../img/electra.jpg'),

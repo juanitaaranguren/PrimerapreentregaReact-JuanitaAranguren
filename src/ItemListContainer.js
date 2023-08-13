@@ -6,7 +6,8 @@ import productos from './productos'
 
 function ItemListContainer (props){
 
-    const Productos = useState ([
+    const Productos = // useState 
+    ([
         {
             title: 'Meteor 350',
             image: ('../img/electra.jpg'),
@@ -69,9 +70,7 @@ function ItemListContainer (props){
           },
         ])
 
-        useEffect (()=> {
-
-        }, [])
+        //useEffect (()=> {}, [])
         return (
             <main>
                 <h2 className="text-[20px] text-center">{props.greeting}</h2>
