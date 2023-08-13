@@ -1,24 +1,32 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import productosData from "./productos"; // Asegúrate de importar los datos de productos
+import productosData from "./productos"; 
+import Loader from "./Loader";
+
 
 function ItemListContainer(props) {
-    const [productos, setProductos] = useState([]); // Inicializa productos con un arreglo vacío
-
+    const [productos, setProductos] = useState([]); 
+    const [loading, setLoading] = useState (true)
 
     useEffect(() => {
        
         setTimeout(() => {
             setProductos(productosData);
+            setLoading (false);
         }, 2000);
     }, []);
 
-    return (
+    if (loading) {
+      return (
+        <Loader/>
+      )
+    } else {
+
+      return (
         <main>
             <h2 className="text-[20px] text-center">{props.greeting}</h2>
             <ItemList productos={productos} />
-        </main>
-    );
+        </main>)
+    }
 }
-
 export default ItemListContainer;
