@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "./Item";
-import Contador from "./ItemCount"
+
+
 
 function ItemList(props) {
   return (
@@ -10,6 +11,8 @@ function ItemList(props) {
           key={index}
           title={producto.title}
           image={producto.image}
+          precio={producto.precio}
+          descripcion={producto.descripcion}
           maxStock={producto.maxStock}
         />
       ))}

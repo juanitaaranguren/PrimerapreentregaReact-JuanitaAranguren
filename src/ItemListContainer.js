@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import productosData from "./productos";
-import { BeatLoader } from "react-spinners"; 
-import "./ItemListContainer.scss"; 
+import { BeatLoader } from "react-spinners";
+import "./ItemListContainer.scss";
+
+function obtenerProductos() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(productosData);
+        }, 2000);
+    });
+}
 
 function ItemListContainer(props) {
     const [productos, setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => {
-            setProductos(productosData);
-            setLoading(false);
-        }, 2000);
+        obtenerProductos()
+            .then((productosObtenidos) => {
+                setProductos(productosObtenidos);
+                setLoading(false);
+            });
     }, []);
 
     return (
