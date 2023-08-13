@@ -8,7 +8,6 @@ function NavBar (){
                 <a href="http://">Royal Enfield</a>
                 <a href="http://">Ducati</a>
                 <a href="http://">Yamaha</a>
-                <a href="http://">Honda</a>
             </nav>
             <CarWidget />
         </header>

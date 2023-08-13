@@ -2,10 +2,11 @@
 import React from "react";
 import Contador from "./ItemCount";
 import ItemList from './ItemList'
+import productos from './productos'
 
 function ItemListContainer (props){
 
-    const productos = [
+    const Productos = useState ([
         {
             title: 'Meteor 350',
             image: ('../img/electra.jpg'),
@@ -66,7 +67,11 @@ function ItemListContainer (props){
             image: ('../img/bulletrials.jpg'),
             maxStock: 5
           },
-        ]
+        ])
+
+        useEffect (()=> {
+
+        }, [])
         return (
             <main>
                 <h2 className="text-[20px] text-center">{props.greeting}</h2>
