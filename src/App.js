@@ -1,7 +1,6 @@
 import NavBar from './NavBar'
 import Footer from './Footer'
 import ItemListContainer from './ItemListContainer'
-import ItemCount from './ItemCount'
 
 
 
