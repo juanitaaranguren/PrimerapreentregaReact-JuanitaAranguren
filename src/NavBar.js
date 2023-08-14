@@ -4,14 +4,21 @@ import { NavLink } from "react-router-dom"
 function NavBar (){
     return (
         <header className="flex p-2 justify-between bg-black text-white shadow">
-            <h1 className="text-[40px]"id="titulo">Tienda de motos</h1>
+            
+            <NavLink to="/" className="navbar-logo">
+                <h1 className="text-[40px]" id="titulo">Tienda de motos</h1>
+            </NavLink>
             <nav className="flex gap-4">
             <NavLink to= '/'>Home</NavLink>
-            <NavLink to= '/'>Royal Enfield</NavLink>
-            <NavLink to= '/'>Harley Davidson</NavLink>
-            <NavLink to= '/'>Triumph</NavLink>
-            </nav>
+            <NavLink to= '/categoria/RoyalEnfield'>Royal Enfield</NavLink>
+            <NavLink to= '/categoria/HarleyDavidson'>Harley Davidson</NavLink>
+            <NavLink to= '/categoria/Triumph'>Triumph</NavLink>
+            <NavLink to ="/carrito">
             <CarWidget />
+            </NavLink>
+           
+            </nav>
+            
         </header>
         
     )
