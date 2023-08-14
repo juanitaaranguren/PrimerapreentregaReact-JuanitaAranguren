@@ -18,7 +18,7 @@ const Contador = ({ maxStock }) => {
   const comprar = () => {
     if (count > 0) {
       alert("¡Gracias por tu compra!");
-      setCount(0); // Restablecer el contador a 0
+      setCount(0); 
     } else {
       alert("No podemos atenderte");
     }

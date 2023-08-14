@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import productosData from "./Productos";
-import "./DestinoMotoButton.scss"; // Importa tu archivo de estilos
+import "./DestinoMotoButton.scss"; 
 
 function DestinoMotoButton() {
   const [productoAleatorio, setProductoAleatorio] = useState(null);
