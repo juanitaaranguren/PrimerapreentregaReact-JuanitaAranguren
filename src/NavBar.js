@@ -1,27 +1,53 @@
-import CarWidget from "./CarWidget"
-import { NavLink } from "react-router-dom"
+import React from "react";
+import CarWidget from "./CarWidget";
+import { NavLink } from "react-router-dom";
 
-function NavBar (){
+function NavBar() {
     return (
-        <header className="flex p-2 justify-between bg-black text-white shadow">
-            
+        <header className="flex p-4 justify-between bg-black text-white shadow-md">
             <NavLink to="/" className="navbar-logo">
-                <h1 className="text-[40px]" id="titulo">Tienda de motos</h1>
+                <h1 className="text-3xl font-semibold">Tienda de Motos</h1>
             </NavLink>
-            <nav className="flex gap-4">
-            <NavLink to= '/'>Home</NavLink>
-            <NavLink to= "/categoria/Royal%20Enfield">Royal Enfield</NavLink>
-            <NavLink to= '/categoria/Harley%20Davidson'>Harley Davidson</NavLink>
-            <NavLink to= '/categoria/Triumph'>Triumph</NavLink>
-            <NavLink to ="/carrito">
-            <CarWidget />
-            </NavLink>
-           
+            <nav>
+                <ul className="flex space-x-4">
+                    <li>
+                        <NavLink to="/" className="hover:text-red-300">
+                            Inicio
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/categoria/Royal%20Enfield"
+                            className="hover:text-red-300"
+                        >
+                            Royal Enfield
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/categoria/Harley%20Davidson"
+                            className="hover:text-red-300"
+                        >
+                            Harley Davidson
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/categoria/Triumph"
+                            className="hover:text-red-300"
+                        >
+                            Triumph
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/carrito" className="hover:text-red-300">
+                            <CarWidget />
+                        </NavLink>
+                    </li>
+                </ul>
             </nav>
-            
         </header>
-        
-    )
+    );
 }
 
-export default NavBar
+export default NavBar;
