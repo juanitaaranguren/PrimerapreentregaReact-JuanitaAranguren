@@ -3,6 +3,7 @@ import Item from "./Item";
 
 
 
+
 function ItemList(props) {
   return (
     <div className="grid grid-cols-3 gap-4">
@@ -13,6 +14,7 @@ function ItemList(props) {
           image={producto.image}
           precio={producto.precio}
           descripcion={producto.descripcion}
+          marca = {producto.marca}
           maxStock={producto.maxStock}
         />
       ))}

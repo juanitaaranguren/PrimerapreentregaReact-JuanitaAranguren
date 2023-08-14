@@ -10,8 +10,8 @@ function NavBar (){
             </NavLink>
             <nav className="flex gap-4">
             <NavLink to= '/'>Home</NavLink>
-            <NavLink to= '/categoria/RoyalEnfield'>Royal Enfield</NavLink>
-            <NavLink to= '/categoria/HarleyDavidson'>Harley Davidson</NavLink>
+            <NavLink to= "/categoria/Royal%20Enfield">Royal Enfield</NavLink>
+            <NavLink to= '/categoria/Harley%20Davidson'>Harley Davidson</NavLink>
             <NavLink to= '/categoria/Triumph'>Triumph</NavLink>
             <NavLink to ="/carrito">
             <CarWidget />
