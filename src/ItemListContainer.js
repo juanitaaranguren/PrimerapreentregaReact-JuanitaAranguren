@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import productosData from "./productos";
+import productosData from "./Productos";
 import { BeatLoader } from "react-spinners";
 import "./ItemListContainer.scss";
 

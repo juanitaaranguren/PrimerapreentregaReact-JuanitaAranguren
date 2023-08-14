@@ -12,7 +12,7 @@ function Item(props) {
             alt=""
           />
           <p className="mt-2">{props.descripcion}</p>
-          <p className="mt-2">{props.precio}</p>
+          <p className="mt-2">${props.precio}</p>
           <button className="mt-2">Ver detalle</button>
           <Contador maxStock={props.maxStock} />
         </article>
