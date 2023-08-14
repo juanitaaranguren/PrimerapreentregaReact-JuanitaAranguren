@@ -7,6 +7,7 @@ import Productos from "./pages/Productos";
 import Categorias from "./pages/Categorias";
 import Carrito from "./pages/Carrito";
 
+
 function App() {
     return (
         <BrowserRouter>
@@ -16,7 +17,6 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/productos" element={<Productos />} />
                     <Route path="/categoria/:id" element={<Categorias />} />
-                    {/* ... otras rutas */}
                 </Routes>
             </main>
             <Footer />
