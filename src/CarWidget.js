@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FaShoppingCart } from "react-icons/fa";
+import { cartContext } from "./CustomProvider";
 
-function CarWidget(props) {
+function CarWidget() {
+  const valor = useContext(cartContext);
+
   return (
     <div className="car-widget">
-      <i className="fas fa-shopping-cart"></i>
-      <span className="carrito-count">{props.carritoCount}</span>
+      <FaShoppingCart />
+      <span className="itemTotal">{valor.cantidad}</span>
     </div>
   );
 }

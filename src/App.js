@@ -4,29 +4,31 @@ import NavBar from "./NavBar";
 import ItemListContainer from "./ItemListContainer";
 import Footer from "./Footer";
 import Home from "./pages/Home";
-import Productos from "./pages/Productos";
 import Categorias from "./pages/Categorias";
 import Carrito from "./pages/Carrito";
+import CustomProvider from "./CustomProvider";
+
+
+
+
+
 
 function App() {
-  const [carritoCount, setCarritoCount] = useState(0);
-
-  return (
+  return ( 
     <BrowserRouter>
-      <NavBar carritoCount={carritoCount} />
+    <CustomProvider>
+      <NavBar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/productos" element={<Productos />} />
           <Route path="/categoria/:id" element={<Categorias />} />
-          <Route
-            path="/productos"
-            element={<ItemListContainer setCarritoCount={setCarritoCount} />}
-          />
+          <Route path="/productos"/>
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+      </CustomProvider>
+      </BrowserRouter>
+    
   );
 }
 

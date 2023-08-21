@@ -1,22 +1,23 @@
 import Item from './Item'
 
 function ItemList(props) {
-  return (
-    <div className="grid grid-cols-3 gap-4">
+   return (
+     <div className="grid grid-cols-3 gap-4">
       {props.productos.map((producto, index) => (
         <Item
           key={index}
-          title={producto.title}
-          image={producto.image}
+           title={producto.title}
+           image={producto.image}
           precio={producto.precio}
-          descripcion={producto.descripcion}
+           descripcion={producto.descripcion}
           marca={producto.marca}
           maxStock={producto.maxStock}
-          onAgregarAlCarrito={props.onAgregarAlCarrito}
-        />
-      ))}
-    </div>
-  );
-}
+         />      ))}
+     </div>
+   );
+ }
 
-export default ItemList
+ export default ItemList
+
+
+
