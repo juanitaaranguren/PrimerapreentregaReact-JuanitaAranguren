@@ -12,7 +12,6 @@ function DetalleMoto({ producto, onClose }) {
         <p>{producto.descripcion}</p>
         <p>Precio: ${producto.precio}</p>
         <p>Marca: {producto.marca}</p>
-        
       </div>
     </div>
   );

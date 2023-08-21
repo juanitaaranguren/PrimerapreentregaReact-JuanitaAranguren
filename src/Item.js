@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Contador from "./ItemCount";
 import DetalleMoto from "./DetalleMoto";
-import  "./Botonverdetalle.scss";
+import  "./input.scss";
 
 function Item(props) {
   const [showDetalle, setShowDetalle] = useState(false);
@@ -25,7 +25,7 @@ function Item(props) {
         <button className="mt-2 boton-ver-detalle" onClick={toggleDetalle}>
           Ver detalle
         </button>
-        <Contador maxStock={props.maxStock} />
+        <Contador maxStock={props.maxStock} onAgregarAlCarrito={props.onAgregarAlCarrito} /> {/* Añade esta línea */}
       </article>
 
       {/* Ventana emergente */}

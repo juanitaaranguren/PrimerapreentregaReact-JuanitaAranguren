@@ -1,8 +1,4 @@
-import React from "react";
-import Item from "./Item";
-
-
-
+import Item from './Item'
 
 function ItemList(props) {
   return (
@@ -14,12 +10,13 @@ function ItemList(props) {
           image={producto.image}
           precio={producto.precio}
           descripcion={producto.descripcion}
-          marca = {producto.marca}
+          marca={producto.marca}
           maxStock={producto.maxStock}
+          onAgregarAlCarrito={props.onAgregarAlCarrito}
         />
       ))}
     </div>
   );
 }
 
-export default ItemList;
+export default ItemList

@@ -18,7 +18,7 @@ const Contador = ({ maxStock }) => {
   const comprar = () => {
     if (count > 0) {
       alert("¡Gracias por tu compra!");
-      setCount(0); 
+      setCount(0);
     } else {
       alert("No podemos atenderte");
     }
@@ -27,20 +27,22 @@ const Contador = ({ maxStock }) => {
   return (
     <div className="flex flex-col items-center">
       <h2>Carrito de compras: {count}</h2>
-      <button
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={incrementar}
-        disabled={count === maxStock}
-      >
-        Agregar
-      </button>
-      <button
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={decrementar}
-        disabled={count === 0}
-      >
-        Eliminar
-      </button>
+      <div className="flex">
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded m-2"
+          onClick={decrementar}
+          disabled={count === 0}
+        >
+          -
+        </button>
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded m-2"
+          onClick={incrementar}
+          disabled={count === maxStock}
+        >
+          +
+        </button>
+      </div>
       <button
         className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
         onClick={comprar}

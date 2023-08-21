@@ -1,13 +1,12 @@
+import React from "react";
 
-
-function CarWidget (){
-    return (
-    <>
-
-    <img className= "carrito"src="../img/carrito.png" alt="" srcset="" />
-    </>
-    )
+function CarWidget(props) {
+  return (
+    <div className="car-widget">
+      <i className="fas fa-shopping-cart"></i>
+      <span className="carrito-count">{props.carritoCount}</span>
+    </div>
+  );
 }
 
-
-export default CarWidget
+export default CarWidget;
