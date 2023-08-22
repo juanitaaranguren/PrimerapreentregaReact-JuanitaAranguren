@@ -1,6 +1,6 @@
 import React from "react";
 
-function DetalleMoto({ producto, onClose }) {
+function ItemDetail ({ producto, onClose }) {
   return (
     <div className="overlay">
       <div className="detalle-moto">
@@ -17,4 +17,4 @@ function DetalleMoto({ producto, onClose }) {
   );
 }
 
-export default DetalleMoto;
+export default ItemDetail;

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavBar from "./NavBar";
-import ItemListContainer from "./ItemListContainer";
-import Footer from "./Footer";
+import NavBar from "./componentes/NavBar";
+import Footer from "./componentes/Footer";
 import Home from "./pages/Home";
 import Categorias from "./pages/Categorias";
 import Carrito from "./pages/Carrito";
@@ -23,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/categoria/:id" element={<Categorias />} />
           <Route path="/productos"/>
+          <Route path="/carrito" element={<Carrito />} />
         </Routes>
       </main>
       <Footer />

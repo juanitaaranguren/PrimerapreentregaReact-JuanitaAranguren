@@ -1,7 +1,7 @@
 import React from "react";
 import CarWidget from "./CarWidget";
 import { NavLink } from "react-router-dom";
-import  "./input.scss"; 
+import  "../input.scss"; 
 import { GiFullMotorcycleHelmet } from "react-icons/gi";
 
 
@@ -43,7 +43,7 @@ function NavBar(props) {
             </NavLink>
           </li>
           <li>
-          <NavLink to="/carrito" className="hover:text-red-300">
+          <NavLink to="/Carrito" className="hover:text-red-300">
           <CarWidget />
         </NavLink>
           </li>

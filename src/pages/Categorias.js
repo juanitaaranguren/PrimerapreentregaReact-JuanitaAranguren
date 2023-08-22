@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ItemList from "../ItemList"; 
-import productosData from "../Productos";
+import ItemList from "../componentes/ItemList"; 
+import productosData from "../componentes/Productos";
 
 
 

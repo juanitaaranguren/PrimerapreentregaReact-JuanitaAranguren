@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { cartContext } from "./CustomProvider";
-import DetalleMoto from "./DetalleMoto";
+import { cartContext } from "../CustomProvider";
+import ItemDetail from "./ItemDetail";
 
 function Item(props) {
   const valorDelContexto = useContext(cartContext);
@@ -11,7 +11,7 @@ function Item(props) {
   };
 
   const limpiarCarrito = () => {
-    valorDelContexto.setCantidad(0); // Establece la cantidad en 0 para limpiar el carrito
+    valorDelContexto.setCantidad(0);
   };
 
   return (
@@ -45,7 +45,7 @@ function Item(props) {
           
         </article>
       </main>
-      {showDetalle && <DetalleMoto producto={props} onClose={toggleDetalle} />}
+      {showDetalle && <ItemDetail producto={props} onClose={toggleDetalle} />}
     </div>
   );
 }

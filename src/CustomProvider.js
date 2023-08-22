@@ -4,10 +4,10 @@ export const cartContext = createContext();
 const CartProvider = cartContext.Provider;
 
 function CustomProvider(props) {
-  const [cantidad, setCantidad] = useState(0);
+  const [cantidad, setCantidad] = useState(0); 
 
   return (
-    <CartProvider value={{ cantidad, setCantidad }}> 
+    <CartProvider value={{ cantidad, setCantidad }}>
       {props.children}
     </CartProvider>
   );
