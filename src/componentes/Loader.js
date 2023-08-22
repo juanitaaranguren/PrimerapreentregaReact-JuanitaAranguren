@@ -1,7 +1,6 @@
-function Loader (){
+function Loader() {
     return (
-        <div>Espera un momento...</div>
+      <div>Cargando...</div>
     )
-}
-
-export default Loader
+  }
+  export default Loader

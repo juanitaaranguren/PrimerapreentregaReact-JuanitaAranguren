@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./componentes/NavBar";
@@ -6,9 +7,6 @@ import Home from "./pages/Home";
 import Categorias from "./pages/Categorias";
 import Carrito from "./pages/Carrito";
 import CustomProvider from "./CustomProvider";
-
-
-
 
 
 

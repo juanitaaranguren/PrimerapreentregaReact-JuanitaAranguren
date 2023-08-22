@@ -1,6 +1,6 @@
 
 
-const productos =
+const Productos =
 ([
     {
         id: 1,
@@ -165,7 +165,7 @@ const productos =
         title: 'Scrambler 1200',
         image: ('../img/scrambler.jpg'),
         maxStock: 5,
-        descripcion: "Experimenta emoción pura. Su estilo clásico y su rendimiento avanzado se combinan para ofrecerte una experiencia de conducción única..",
+        descripcion: "Experimenta emoción pura. Su estilo clásico y su rendimiento avanzado se combinan para ofrecerte una experiencia de conducción única.",
         precio: 17000,
         marca: "Triumph"
       },
@@ -175,4 +175,4 @@ const productos =
     ])
 
 
-    export default productos
+    export default Productos
